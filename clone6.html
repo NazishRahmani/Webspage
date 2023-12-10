@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebPage Clone</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: white;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            overflow-x: hidden;
+
+        }
+
+        .first {
+            border: 1px solid black;
+            color: #030303;
+            font-weight: 700;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            align-items: center;
+            margin-top: 10px;
+            background-color: #22dc38;
+            padding: 10px;
+        }
+
+        .box {
+            font-family: fantasy;
+            padding: 12px 0px;
+            margin: 10px auto;
+            background-color: rgb(85, 86, 84);
+            color: white;
+            box-shadow: 1px 1px 25px #fcfbfb;
+            max-width: 100%;
+            text-align: center;
+            height: 100vh;
+
+            transition: background-color 0.5s ease;
+
+        }
+
+        h1 {
+            font-size: 2em;
+            cursor: pointer;
+            color: #dfdada;
+            box-shadow: 1px 1px 5px #ccc;
+            border-radius: 5px;
+            padding: 4px 6px;
+        }
+
+        .box nav,
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        li,
+        button {
+            cursor: pointer;
+            line-height: 12px;
+            font-size: 16px;
+        }
+
+        .box nav ul {
+            margin-top: 10px;
+        }
+
+        .box nav ul li {
+            list-style: none;
+            margin-bottom: 10px;
+        }
+
+        .slogan {
+            margin-top: 5vh;
+            text-align: center;
+            margin-bottom: 20px;
+
+        }
+
+        .main {
+            font-size: 4vh;
+            line-height: 1.5;
+            font-family: cursive;
+            font-weight: 900;
+            margin-bottom: 12px;
+            color: #0fe163;
+        }
+
+        .para {
+            margin-top: 2vh;
+            color: #d3d3d3;
+            text-align: center;
+            line-height: 20px;
+            margin-bottom: 20px;
+        }
+
+        .btn-container {
+            display: flex;
+            justify-content: space-around;
+            gap: 10px;
+        }
+
+        .green,
+        .white,
+        .green2,
+        .white2 {
+            width: 100%;
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 3px;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .green {
+            background-color: #1a8a16;
+            color: white;
+            border-style: none;
+        }
+
+        .white {
+            background-color: #e9e6e6;
+            color: #1a1a4c;
+            border-style: none;
+        }
+
+        .green2 {
+            background-color: #1a8a16;
+            color: white;
+            border-style: none;
+        }
+
+        .white2 {
+            background-color: #e9e6e6;
+            color: #1a1a4c;
+            border-style: none;
+        }
+
+        .last {
+            text-align: center;
+            margin-top: 30px;
+            font-family: sans-serif;
+            color: white;
+        }
+
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
+        }
+
+        .logo {
+            max-width: 100px;
+            max-height: 50px;
+            margin: 10px;
+        }
+
+        @media only screen and (min-width: 768px) {
+            .first {
+                flex-direction: row;
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+
+            .box {
+                width: 50%;
+               
+            }
+        }
+
+        .title-description {
+            font-family: sans-serif;
+            text-align: center;
+            margin-top: 8vh;
+            color: #030303;
+            line-height: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <ul class="first">
+            <li>Contact us</li>
+            <li>Log in</li>
+        </ul>
+        <div class="box">
+            <nav>
+                <h1>📗RahmaniCode</h1>
+                <ul>
+                    <li class="shadow">Products</li>
+                    <li class="shadow">Solutions</li>
+                    <li class="shadow">Resources</li>
+                    <li class="shadow">Pricing</li>
+                </ul>
+                <ul>
+                    <li class="shadow">For developers</li>
+                    <li>|</li>
+                    <li><button class="white">Request Demo</button></li>
+                    <li><button class="green">Sign Up</button></li>
+                </ul>
+            </nav>
+            <div class="slogan">
+                <p class="main">Skills Speak Louder</p>
+                <p class="main">Than Words</p>
+
+            </div>
+            <div class="para">
+                <p>We help companies develop the strongest tech teams around. We help</p>
+                <p>candidates sharpen their tech skills and pursue job opportunities.</p>
+            </div>
+
+            <div class="btn-container">
+                <button class="green2">Sign Up</button>
+                <button class="white2">Request Demo</button>
+            </div>
+            <p class="last">Over 40% of developers worldwide and 3,000 companies use HackerRank</p>
+
+            <div class="title-description">
+                <p><strong>RahmaniCode:</strong> Enhancing Tech Skills, Empowering Developers.</p>
+                <p>Join the world's leading online coding platform to advance your programming expertise.</p>
+                <p>Challenge yourself, solve coding problems, and connect with top tech companies.</p>
+                <p>Unleash your potential with HackerRank - Where Skills Meet Opportunities.</p>
+            </div>
+
+            <div class="logo-container">
+                <img src="https://t3.gstatic.com/images?q=tbn:ANd9GcTpQprZoYIfE6E9Rc4YcFYUAIhpwcthWz6pqkxHrrOm2rYLeFA4"
+                    alt="Company Logo 1" class="logo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiRFmbujPfm8BdnvNGKTgFX2FkPZIrH7Fx-w&usqp=CAU"
+                    alt="Company Logo 2" class="logo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFJBftdcgfBvtP0Jen2Jtj7NEzaW7HP6cgOqr1aP-TOUNrcUs4xCQEVUYdqa5Tc7-I_tg&usqp=CAU"
+                    alt="Company Logo 3" class="logo">
+            </div>
+</body>
+
+</html>
